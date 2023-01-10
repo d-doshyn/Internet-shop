@@ -1,0 +1,11 @@
+/* img fits the borders */
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*remove margins*/
+*{
+    margin: 0;
+    padding: 0;
+}
