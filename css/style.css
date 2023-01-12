@@ -1,0 +1,94 @@
+body{
+    min-height: 100vh;
+}
+
+/* registration modal */
+.reg-modal-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.302);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-modal{
+    width: 280px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-title{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.form-field, .reg-form-input{
+    width: 100%;
+}
+
+.form-input-subtitle{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.reg-form-input{
+    height: 25px;
+    margin-top: 0.1em;
+    padding-left: 0.3em;
+    border: 1.5px rgba(0, 0, 0, 1) solid;
+    border-radius: 5px;
+    outline: none;
+}
+
+.reg-form-input::placeholder, .reg-form-input{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.authorize-buttons button{
+    display: block;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border-style: solid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.authorize-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dont-authorize{
+    border: 1px #000;
+    background-color: transparent;
+}
+
+.dont-authorize:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.authorize{
+    background-color: #000;
+    color: #fff;
+    border: 1px #000;
+}
+
+.authorize:hover{
+    background-color: #fff;
+    color: #000;
+}
