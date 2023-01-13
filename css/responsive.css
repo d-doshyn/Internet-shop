@@ -28,6 +28,38 @@
     }
 }
 
+@media screen and (min-width: 1024px){
+    /* modal */
+    .reg-modal{
+        width: 400px;
+        height: 500px;
+        padding: 3em;
+    }
+
+    .form-title{
+        font-size: 3rem;
+        font-weight: 200;
+    }
+
+    .authorize-buttons button{
+        width: 120px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .form-input-subtitle{
+        font-size: 1.2rem;
+    }
+
+    .reg-form-input{
+        height: 35px;
+    }
+
+    .reg-form-input, .reg-form-input::placeholder{
+        font-size: 1rem;
+    }
+}
+
 @media screen and (min-width: 1440px) {
 
     /*Catalog*/
