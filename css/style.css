@@ -1,9 +1,9 @@
-body{
+body {
     min-height: 100vh;
 }
 
 /* registration modal */
-.reg-modal-container{
+.reg-modal-container {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -14,7 +14,7 @@ body{
     align-items: center;
 }
 
-.reg-modal{
+.reg-modal {
     width: 280px;
     height: 340px;
     background-color: #fff;
@@ -26,21 +26,22 @@ body{
     justify-content: space-around;
 }
 
-.form-title{
+.form-title {
     font-size: 2rem;
     font-weight: 300;
 }
 
-.form-field, .reg-form-input{
+.form-field,
+.reg-form-input {
     width: 100%;
 }
 
-.form-input-subtitle{
+.form-input-subtitle {
     font-weight: 600;
     font-size: 1rem;
 }
 
-.reg-form-input{
+.reg-form-input {
     height: 25px;
     margin-top: 0.1em;
     padding-left: 0.3em;
@@ -49,11 +50,12 @@ body{
     outline: none;
 }
 
-.reg-form-input::placeholder, .reg-form-input{
+.reg-form-input::placeholder,
+.reg-form-input {
     font-family: 'Montserrat', sans-serif;
 }
 
-.authorize-buttons button{
+.authorize-buttons button {
     display: block;
     width: 80px;
     height: 30px;
@@ -65,30 +67,103 @@ body{
     transition: .5s;
 }
 
-.authorize-buttons{
+.authorize-buttons {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.dont-authorize{
+.dont-authorize {
     border: 1px #000;
     background-color: transparent;
 }
 
-.dont-authorize:hover{
+.dont-authorize:hover {
     background-color: #000;
     color: #fff;
 }
 
-.authorize{
+.authorize {
     background-color: #000;
     color: #fff;
     border: 1px #000;
 }
 
-.authorize:hover{
+.authorize:hover {
     background-color: #fff;
     color: #000;
+}
+
+/* Catalog */
+
+.catalog {
+    width: 100%;
+}
+
+.catalog-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    margin: 20px auto;
+    width: fit-content;
+    padding: 5px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    transition: 0.2s;
+    background-color: #fff;
+}
+
+.card-img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.product-name {
+    font-size: 16px;
+}
+
+.price {
+    font-size: 14px;
+}
+
+.add-to-cart-container {
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.759);
+    transition: 0.3s;
+}
+
+.add-to-cart {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    transition: 0.3s;
+}
+
+.add-to-cart-container:hover {
+    background-color: white;
+}
+
+.add-to-cart-container:hover .add-to-cart {
+    color: black;
+}
+
+.add-to-cart-container:active {
+    transition: 0.1s;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.727);
+    transform: translate(0, 3px);
 }
