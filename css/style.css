@@ -145,7 +145,6 @@ body {
     border-radius: 10px;
     border: 2px solid black;
     cursor: pointer;
-    box-shadow: 0 5px rgba(0, 0, 0, 0.759);
     transition: 0.3s;
 }
 
@@ -162,10 +161,4 @@ body {
 
 .add-to-cart-container:hover .add-to-cart {
     color: black;
-}
-
-.add-to-cart-container:active {
-    transition: 0.1s;
-    box-shadow: 0 2px rgba(0, 0, 0, 0.727);
-    transform: translate(0, 3px);
 }
