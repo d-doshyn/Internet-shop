@@ -11,7 +11,7 @@ body {
     height: 100%;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.302);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
