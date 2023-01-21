@@ -28,34 +28,36 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
+
     /* modal */
-    .reg-modal{
+    .reg-modal {
         width: 400px;
         height: 500px;
         padding: 3em;
     }
 
-    .form-title{
+    .form-title {
         font-size: 3rem;
         font-weight: 200;
     }
 
-    .authorize-buttons button{
+    .authorize-buttons button {
         width: 120px;
         height: 40px;
         font-size: 1.2rem;
     }
 
-    .form-input-subtitle{
+    .form-input-subtitle {
         font-size: 1.2rem;
     }
 
-    .reg-form-input{
+    .reg-form-input {
         height: 35px;
     }
 
-    .reg-form-input, .reg-form-input::placeholder{
+    .reg-form-input,
+    .reg-form-input::placeholder {
         font-size: 1rem;
     }
 }

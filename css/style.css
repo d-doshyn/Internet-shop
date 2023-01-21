@@ -97,8 +97,20 @@ body {
     color: #000;
 }
 
-/* Catalog */
+/* main page */
+main{
+    height: 500px;
+    background-color: #fff;
+}
 
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Catalog */
 .catalog {
     width: 100%;
 }
@@ -124,7 +136,7 @@ body {
 }
 
 .card-img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 180px;
     height: 180px;
 }
