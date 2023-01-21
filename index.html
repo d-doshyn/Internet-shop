@@ -23,6 +23,10 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- js links -->
+
+    <script src="js/headerMenu.js" defer></script>
+
     <title>Файний інтернет-магазин</title>
 </head>
 
@@ -32,10 +36,19 @@
         <div class="header-container">
             <div class="logo-container">
                 <span>
-                    <div class="logo-img"><img src="https://dummyimage.com/50x50/ffffff/000000.png?text=LOGO" alt="#"></div>
+                    <div class="logo">LOGO</div>
                 </span>
             </div>
+            <div class="cart">
+                <div class="cart-container">
+                    <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="cart-text"><a href="#">Cart</a></div>
+                </div>
+            </div>
             <div class="header-menu-container">
+                <div class="burger-menu-icon">
+                    <span></span>
+                </div>
                 <ul class="header-menu">
                     <li class="header-menu-item">
                         <a class="header-menu-item-text" href="#">
@@ -55,12 +68,6 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="cart">
-                <div class="cart-container">
-                    <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-                    <div class="cart-text"><a href="#">Cart</a></div>
-                </div>
             </div>
         </div>
     </header>
