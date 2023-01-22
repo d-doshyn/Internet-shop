@@ -101,6 +101,14 @@ body {
 main{
     height: 500px;
     background-color: #fff;
+    position: relative;
+    border: #000 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
 }
 
 canvas{
@@ -108,6 +116,36 @@ canvas{
     top: 0;
     left: 0;
     width: 100%;
+}
+
+.from-main-to-catalog{
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: 0.5s;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.from-main-to-catalog:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.main-page-title{
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+
+.main-page-subtitle{
+    font-size: 1rem;
+    opacity: 0.6;
 }
 
 /* Catalog */
