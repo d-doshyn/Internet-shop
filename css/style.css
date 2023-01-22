@@ -162,3 +162,32 @@ body {
 .add-to-cart-container:hover .add-to-cart {
     color: black;
 }
+
+/* cart */
+.cart-container{
+    margin: 20px 0 0 0;
+}
+
+.cart-total-price{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+
+.cart-card{
+    display: flex;
+    padding: 20px;
+}
+
+.cart-card-right{
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-title{
+    font-size: 20px;
+}
