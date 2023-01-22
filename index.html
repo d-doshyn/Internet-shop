@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css links -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <!-- particles -->
+    <script src="js/particles.js" defer></script>
+    <script src="js/app.js" defer></script>
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +22,66 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- css links -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- js links -->
+
+    <script src="js/headerMenu.js" defer></script>
+
     <title>Файний інтернет-магазин</title>
 </head>
 
 <body>
+    <!-- header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <span>
+                    <div class="logo">LOGO</div>
+                </span>
+            </div>
+            <div class="cart">
+                <div class="cart-container">
+                    <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="cart-text"><a href="#">Cart</a></div>
+                </div>
+            </div>
+            <div class="header-menu-container">
+                <div class="burger-menu-icon">
+                    <span></span>
+                </div>
+                <ul class="header-menu">
+                    <li class="header-menu-item">
+                        <a class="header-menu-item-text" href="#">
+                            Main
+                        </a>
+                    </li>
+
+                    <li class="header-menu-item">
+                        <a class="header-menu-item-text" href="#">
+                            Catalog
+                        </a>
+                    </li>
+
+                    <li class="header-menu-item">
+                        <a class="header-menu-item-text" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- main page -->
+    <main id="particles-js">
+        <h1 class="main-page-title">So nice internet-shop</h1>
+        <h5 class="main-page-subtitle">No doubt</h5>
+        <button class="from-main-to-catalog">TO CATALOG</button>
+    </main>
+
     <!-- catalog -->
     <section class="catalog">
         <div class="catalog-container">
