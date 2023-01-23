@@ -102,7 +102,6 @@
         height: 18px;
         cursor: pointer;
         left: 50px;
-        top: 14px;
     }
 
     .burger-menu-icon span,
@@ -135,7 +134,7 @@
     }
 
     .header-menu {
-        opacity: 0;
+        display: none;
     }
 
     .header-menu-item {
