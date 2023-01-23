@@ -28,8 +28,24 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+    /* cart */
+    .cart-total-price{
+        font-size: 24px;
+    }
 
+    .cart-card-left img{
+        width: 200px;
+    }
+
+    .card-title{
+        font-size: 24px;
+    }
+
+    .cart-card-right{
+        font-size: 20px;
+    }
+
+@media screen and (min-width: 1024px){
     /* modal */
     .reg-modal {
         width: 400px;
@@ -60,10 +76,49 @@
     .reg-form-input::placeholder {
         font-size: 1rem;
     }
+
+    /* main page */
+    .main-page-title{
+        font-size: 3rem;
+        font-weight: 200;
+    }
+
+    .main-page-subtitle{
+        font-size: 1.2rem;
+    }
+
+    .from-main-to-catalog{
+        width: 170px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    main{
+        gap: 20px;
+        height: 600px;
+    }
 }
 
-@media screen and (min-width: 1440px) {
+    /* cart */
+    .cart-total-price{
+        font-size: 28px;
+    }
 
+    .cart-card-left img{
+        width: 250px;
+    }
+
+    .card-title{
+        font-size: 28px;
+    }
+
+    .cart-card-right{
+        font-size: 24px;
+    }
+
+
+
+@media screen and (min-width: 1440px) {
     /*Catalog*/
     .catalog-container {
         grid-template-columns: 1fr 1fr 1fr;
