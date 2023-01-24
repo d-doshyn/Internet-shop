@@ -97,24 +97,26 @@
         gap: 20px;
         height: 600px;
     }
-}
 
     /* cart */
     .cart-total-price{
         font-size: 28px;
     }
-
+    
     .cart-card-left img{
         width: 250px;
     }
-
-    .card-title{
+    
+    .cart-card-title{
         font-size: 28px;
     }
-
+    
     .cart-card-right{
         font-size: 24px;
     }
+}
+
+
 
 
 
