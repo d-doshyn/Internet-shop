@@ -27,9 +27,9 @@
         font-size: 22px;
     }
 
-    /* cart */
-    .cart-total-price{
-        font-size: 24px;
+    /* header */
+    .header-container {
+        height: 60px;
     }
     
     .cart-card-left img{
@@ -72,6 +72,43 @@
 }
 
 @media screen and (min-width: 1024px){
+
+    .header-menu-item {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .profile {
+        font-size: 16px;
+    }
+
+    .cart-container {
+        font-size: 16px;
+    }
+}
+
+/* cart */
+.cart-total-price {
+    font-size: 24px;
+}
+
+.cart-card-left img {
+    width: 200px;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.cart-card-right {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+
     /* modal */
     .reg-modal {
         width: 400px;
@@ -104,46 +141,79 @@
     }
 
     /* main page */
-    .main-page-title{
+    .main-page-title {
         font-size: 3rem;
         font-weight: 200;
     }
 
-    .main-page-subtitle{
+    .main-page-subtitle {
         font-size: 1.2rem;
     }
 
-    .from-main-to-catalog{
+    .from-main-to-catalog {
         width: 170px;
         height: 50px;
         font-size: 1.3rem;
     }
 
-    main{
+    main {
         gap: 20px;
         height: 700px;
     }
 
     /* cart */
-    .cart-total-price{
-        font-size: 28px;
-    }
-    
-    .cart-card-left img{
-        width: 250px;
-    }
-    
-    .cart-card-title{
+    .cart-total-price {
         font-size: 28px;
     }
 
-    .cart-card-right{
+    .cart-card-left img {
+        width: 250px;
+    }
+
+    .cart-card-title {
+        font-size: 28px;
+    }
+
+    .cart-card-right {
         font-size: 24px;
+    }
+
+    /* header */
+
+    .profile-container {
+        flex: 1 1 500px;
+        justify-content: flex-start;
+        border-right: none;
+    }
+
+    .burger-menu-icon {
+        display: none;
+    }
+
+    .header-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-menu-item {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .header-container {
+        width: 90vw;
+        height: 80px;
+        border-radius: 20px;
     }
 }
 
 
 @media screen and (min-width: 1440px) {
+
     /*Catalog*/
     .catalog-container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -199,71 +269,21 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+    /* header */
 
-    .burger-menu-icon {
-        z-index: 5;
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 18px;
-        cursor: pointer;
-        left: 50px;
-        top: 14px;
-    }
-
-    .burger-menu-icon span,
-    .burger-menu-icon::before,
-    .burger-menu-icon::after {
-        left: 0;
-        position: absolute;
-        height: 10%;
-        width: 100%;
-        transition: 0.3s;
-        background-color: white;
-    }
-
-    .burger-menu-icon::before,
-    .burger-menu-icon::after {
-        content: "";
-    }
-
-    .burger-menu-icon::before {
-        top: 0;
-    }
-
-    .burger-menu-icon::after {
-        bottom: 0;
-    }
-
-    .burger-menu-icon span {
-        top: 50%;
-        transform: scale(1), translate(0px, -50%);
-    }
-
-    .header-menu {
-        opacity: 0;
+    .profile {
+        font-size: 24px;
     }
 
     .header-menu-item {
         font-size: 24px;
     }
 
-    div .logo {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .header-container {
-        height: 60px;
-    }
-
-    .header-menu-item {
-        font-size: 20px;
-    }
-
     .logo {
-        font-size: 22px;
+        font-size: 30px;
+    }
+
+    .cart-container {
+        font-size: 24px;
     }
 }

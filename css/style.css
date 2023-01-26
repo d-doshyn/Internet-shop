@@ -176,7 +176,6 @@ canvas{
 }
 
 .card-img {
-    /* border-radius: 50%; */
     width: 180px;
     height: 180px;
 }
@@ -250,10 +249,10 @@ header {
 }
 
 .header-container {
-    width: 90vw;
-    height: 80px;
-    background-color: rgb(93, 93, 93);
-    border-radius: 30px;
+    width: 95vw;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
     color: white;
     display: flex;
     align-items: center;
@@ -266,75 +265,69 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid rgb(255, 255, 255);
     padding: 10px;
     flex: 1 1;
+    border-right: 2px solid rgb(255, 255, 255);
 }
 
 .logo {
-    font-size: 28px;
-}
-
-.header-menu-container {
-    margin: 0px 30px;
-    width: 30%;
+    font-size: 14px;
 }
 
 .header-menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: none;
+}
+
+.header-menu-container {
+    width: 30%;
+    margin-right: 30px;
 }
 
 .header-menu-item {
-    font-size: 20px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    border-radius: 15px;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 10px;
     transition: 0.2s;
+    font-size: 16px;
 }
-
 .header-menu-item a:link {
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
-
 .header-menu-item a:visited {
     color: white;
 }
-
 .header-menu-item:hover {
     background-color: white;
 }
-
 .header-menu-item:hover a {
     color: black;
 }
 
 .cart {
-    margin-left: 20px;
-    width: 10%;
+    width: 25%;
+    padding: 10px;
     height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex: 1 1;
+    border-right: 2px solid white;
 }
 
 .cart-container {
-    height: 80%;
+    font-size: 12px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 10px;
     gap: 15px;
-    font-size: 20px;
     font-weight: 600;
-    border-radius: 20px;
-    transition: 0.2s;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .cart-text a:link {
@@ -359,8 +352,87 @@ header {
     color: black;
 }
 
+.profile-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 5px;
+    border-right: 2px solid white;
+    flex: 0 0;
+}
+
+.profile {
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 5px;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.profile a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.profile a:visited {
+    color: white;
+}
+
+.profile:hover {
+    background-color: #fff;
+}
+.profile:hover a, .profile:hover .fa-user {
+    color: black;
+}
+
+.burger-menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .burger-menu-icon {
-    display: none;
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.burger-menu-icon span,
+.burger-menu-icon::before,
+.burger-menu-icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.burger-menu-icon::before,
+.burger-menu-icon::after {
+    content: "";
+}
+
+.burger-menu-icon::before {
+    top: 0;
+}
+
+.burger-menu-icon::after {
+    bottom: 0;
+}
+
+.burger-menu-icon span {
+    top: 50%;
+    transform: scale(1), translate(0px, -50%);
 }
 
 /* footer */
@@ -479,14 +551,16 @@ a .dark-text:hover {
 
 /* helper classes for js */
 div .-active {
-    background-color: rgb(93, 93, 93);
-    opacity: 100;
+    background-color: rgb(0, 0, 0);
+    display: flex;
     flex-direction: column;
-    z-index: 3;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
     height: 200px;
     transform: translate(0, 105px);
     border-radius: 20px;
-    transition: 0.3s;
 }
 
 div .-active-menu-icon {
