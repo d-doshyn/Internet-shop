@@ -272,6 +272,7 @@
     
     .profile {
         font-size: 24px;
+        gap: 15px;
     }
     
     .header-menu-item {
@@ -284,5 +285,6 @@
     
     .cart-container {
         font-size: 24px;
+        gap: 15px;
     }
 }
