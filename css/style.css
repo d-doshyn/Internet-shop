@@ -279,8 +279,8 @@ header {
 }
 
 .header-menu-container {
-    width: 30%;
-    margin-right: 30px;
+    width: 35%;
+    margin-right: 15px;
 }
 
 .header-menu-item {
@@ -404,6 +404,7 @@ header {
     width: 25px;
     height: 15px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .burger-menu-icon span,
