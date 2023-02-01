@@ -88,26 +88,23 @@
     .cart-container {
         font-size: 16px;
     }
-}
 
-/* cart */
-.cart-total-price {
-    font-size: 24px;
-}
+    /* cart */
+    .cart-total-price {
+        font-size: 24px;
+    }
 
-.cart-card-left img {
-    width: 200px;
-}
+    .cart-card-left img {
+        width: 200px;
+    }
 
-.card-title {
-    font-size: 24px;
-}
+    .card-title {
+        font-size: 24px;
+    }
 
-.cart-card-right {
-    font-size: 20px;
-}
-
-@media screen and (min-width: 1024px) {
+    .cart-card-right {
+        font-size: 20px;
+    }
 
     /* modal */
     .reg-modal {
