@@ -69,20 +69,28 @@
     .rights {
         font-size: 15px;
     }
-}
+    /* header */
 
-@media screen and (min-width: 1024px) {
+    .burger-menu-icon {
+        display: none;
+    }
+
+    .header-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 
     .header-menu-item {
         font-size: 16px;
     }
 
     .logo {
-        font-size: 20px;
+        font-size: 28px;
     }
 
-    .profile {
-        font-size: 16px;
+    .cart {
+        width: 15%;
     }
 
     .cart-container {
@@ -181,10 +189,6 @@
         flex: 1 1 500px;
         justify-content: flex-start;
         border-right: none;
-    }
-
-    .burger-menu-icon {
-        display: none;
     }
 
     .header-menu {
