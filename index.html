@@ -9,7 +9,7 @@
     <!-- particles -->
     <script src="js/particles.js" defer></script>
     <script src="js/app.js" defer></script>
-    
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -48,9 +48,17 @@
                     <div class="cart-text"><a href="#">Cart</a></div>
                 </div>
             </div>
+            <div class="profile-container">
+                <div class="profile">
+                    <div class="profile-icon"><i class="fa-solid fa-user"></i></div>
+                    <a href="#">Profile</a>
+                </div>
+            </div>
             <div class="header-menu-container">
-                <div class="burger-menu-icon">
-                    <span></span>
+                <div class="burger-menu-container">
+                    <div class="burger-menu-icon">
+                        <span></span>
+                    </div>
                 </div>
                 <ul class="header-menu">
                     <li class="header-menu-item">
@@ -79,7 +87,7 @@
     <main id="particles-js">
         <h1 class="main-page-title">So nice internet-shop</h1>
         <h5 class="main-page-subtitle">No doubt</h5>
-        <button class="from-main-to-catalog">TO CATALOG</button>
+        <a class="from-main-to-catalog">TO CATALOG</a>
     </main>
 
     <!-- catalog -->
@@ -195,7 +203,7 @@
     </section> -->
 
     <!-- cart section -->
-    <section class="cart-container">
+    <section class="cart-card-container">
         <h2 class="cart-total-price">
             You added 0 items to your cart. <br>Total price: $0
         </h2>
@@ -204,7 +212,7 @@
                 <img src='https://dummyimage.com/150.png?text=Product'>
             </div>
             <div class="cart-card-right">
-                <h3 class="card-title">Some cool title</h3>
+                <h3 class="cart-card-title">Some cool title</h3>
                 <p class="card-price">0$</p>
                 <p class="card-count">- 1 +</p>
             </div>
@@ -214,12 +222,38 @@
                 <img src='https://dummyimage.com/150.png?text=Product'>
             </div>
             <div class="cart-card-right">
-                <h3 class="card-title">Some cool title</h3>
+                <h3 class="cart-card-title">Some cool title</h3>
                 <p class="card-price">0$</p>
                 <p class="card-count">- 1 +</p>
             </div>
         </div>
     </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__header-container">
+                <h2 class="footer__header">Random image generator by <a href="https://dummyimage.com/" target="_blank"
+                        class="DummyImage-link">DummyImage</a> &amp; <a href="https://picsum.photos/" target="_blank"
+                        class="LoremPicsum-link">Lorem Picsum</a></h2>
+            </div>
+            <div class="footer__icons">
+                <!-- feedback -->
+                <div class="icon-text__container">
+                    <i class="fa-solid fa-comments icon"></i>
+                    <a href="mailto:sergiiyoung@gmail.com" class="footer-link">
+                        <h3 class="icon-text">Complain us how awful is this</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footer-additionalText__container">
+                <p class="footer-additionalText">Made by <b>Super cool Daniil</b>, <b>Insanely cool Nazar</b>,
+                    <b>Unbelievebely cool Serhio</b>.<br><span class="rights">&copy; All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
