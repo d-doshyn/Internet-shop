@@ -167,6 +167,10 @@
     }
 
     /* cart */
+    .cart-card{
+        justify-content: center;
+    }
+
     .cart-total-price {
         font-size: 28px;
     }
