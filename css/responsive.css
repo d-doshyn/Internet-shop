@@ -102,6 +102,24 @@
         font-size: 24px;
     }
 
+    /* *profile modal */
+    .profile-modal-container {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .profile-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .profile-delete-data,
+    .profile-sign-in {
+        font-size: 16px;
+    }
+
+}
+
     .cart-card-left img {
         width: 200px;
     }
@@ -214,6 +232,21 @@
         height: 80px;
         border-radius: 20px;
     }
+
+        /* *profile modal */
+        .profile-modal-container {
+            font-size: 18px;
+        }
+    
+        .profile-img {
+            height: 120px;
+            width: 120px;
+        }
+    
+        .profile-delete-data,
+        .profile-sign-in {
+            font-size: 18px;
+        }
 }
 
 

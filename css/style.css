@@ -674,3 +674,83 @@ div .-active {
 div .-active-menu-icon {
   top: 100px;
 }
+
+.profile-modal {
+    display: flex;
+    justify-items: center;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    /* transform: translate(0, -500px); */
+    transition: 0.4s;
+    position: relative;
+}
+
+.profile-modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: fit-content;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.profile-modal-close-btn-container {
+    width: fit-content;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.profile-img-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.profile-name-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.profile-email-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.profile-password-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-signing-btns-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-delete-data,
+.profile-sign-in {
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.profile-delete-data:hover,
+.profile-sign-in:hover {
+    background-color: black;
+    color: white;
+}
