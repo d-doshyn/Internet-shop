@@ -27,23 +27,6 @@
         font-size: 22px;
     }
 
-    /* header */
-    .header-container {
-        height: 60px;
-    }
-
-    .cart-card-left img {
-        width: 200px;
-    }
-
-    .card-title {
-        font-size: 24px;
-    }
-
-    .cart-card-right {
-        font-size: 20px;
-    }
-
     /* footer */
     .footer__container {
         padding: 20px;
@@ -69,26 +52,8 @@
     .rights {
         font-size: 15px;
     }
-    /* header */
-
-    .burger-menu-icon {
-        display: none;
-    }
-
-    .header-menu {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .header-menu-item {
-        font-size: 16px;
-    }
-
-    .logo {
-        font-size: 28px;
-    }
-
+    
+    /* cart */
     .cart {
         width: 15%;
     }
@@ -97,8 +62,8 @@
         font-size: 16px;
     }
 
-    .profile {
-        font-size: 16px;
+    .cart-total-price {
+        font-size: 24px;
     }
 
     /* *profile modal */
@@ -118,26 +83,17 @@
         padding: 5px;
     }
 
-}
+    .cart-card-left img {
+        width: 200px;
+    }
 
-/* cart */
-.cart-total-price {
-    font-size: 24px;
-}
+    .card-title {
+        font-size: 24px;
+    }
 
-.cart-card-left img {
-    width: 200px;
-}
-
-.card-title {
-    font-size: 24px;
-}
-
-.cart-card-right {
-    font-size: 20px;
-}
-
-@media screen and (min-width: 1024px) {
+    .cart-card-right {
+        font-size: 20px;
+    }
 
     /* modal */
     .reg-modal {
@@ -240,24 +196,21 @@
         border-radius: 20px;
     }
 
-        /* *profile modal */
-        .profile-modal-container {
-            font-size: 18px;
-        }
-    
-        .profile-img {
-            height: 120px;
-            width: 120px;
-        }
-    
-        .profile-delete-data,
-        .profile-sign-in {
-            font-size: 18px;
-            padding: 7px;
-            border-radius: 5px;
-        }
-}
+    /* *profile modal */
+    .profile-modal-container {
+        font-size: 18px;
+    }
 
+    .profile-img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .profile-delete-data,
+    .profile-sign-in {
+        font-size: 18px;
+    }
+}
 
 @media screen and (min-width: 1440px) {
 
@@ -316,20 +269,20 @@
     }
 
     /* header */
-
+    
     .profile {
         font-size: 24px;
         gap: 15px;
     }
-
+    
     .header-menu-item {
         font-size: 24px;
     }
-
+    
     .logo {
         font-size: 30px;
     }
-
+    
     .cart-container {
         font-size: 24px;
         gap: 15px;
