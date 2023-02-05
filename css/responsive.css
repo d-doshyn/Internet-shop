@@ -233,21 +233,20 @@
         border-radius: 20px;
     }
 
-        /* *profile modal */
-        .profile-modal-container {
-            font-size: 18px;
-        }
-    
-        .profile-img {
-            height: 120px;
-            width: 120px;
-        }
-    
-        .profile-delete-data,
-        .profile-sign-in {
-            font-size: 18px;
-        }
-}
+    /* *profile modal */
+    .profile-modal-container {
+        font-size: 18px;
+    }
+
+    .profile-img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .profile-delete-data,
+    .profile-sign-in {
+        font-size: 18px;
+    }
 
 
 @media screen and (min-width: 1440px) {
