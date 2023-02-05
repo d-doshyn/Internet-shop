@@ -115,6 +115,7 @@
     .profile-delete-data,
     .profile-sign-in {
         font-size: 16px;
+        padding: 5px;
     }
 
 }
@@ -252,6 +253,8 @@
         .profile-delete-data,
         .profile-sign-in {
             font-size: 18px;
+            padding: 7px;
+            border-radius: 5px;
         }
 }
 

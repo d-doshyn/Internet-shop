@@ -682,10 +682,11 @@ div .-active-menu-icon {
     margin: auto;
     padding: 20px;
     align-items: center;
-    background-color: #000;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
     border-radius: 10px;
-    /* transform: translate(0, -500px); */
+    transform: translate(0, -500px);
     transition: 0.4s;
     position: relative;
 }
@@ -741,8 +742,8 @@ div .-active-menu-icon {
 .profile-delete-data,
 .profile-sign-in {
     transition: 0.3s;
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -751,6 +752,6 @@ div .-active-menu-icon {
 
 .profile-delete-data:hover,
 .profile-sign-in:hover {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
