@@ -179,6 +179,11 @@
 
     .anchors-menu{
         display: flex;
+        flex-direction: row;
+        position: static;
+        height: auto;
+        width: auto;
+        border: none;
         font-size: 20px;
         gap: 10px;
         transition: 0.3s;
