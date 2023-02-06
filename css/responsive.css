@@ -286,4 +286,8 @@
     .anchor-menu-item{
         font-size: 25px;
     }
+
+    .anchors-menu{
+        gap: 20px
+    }
 }
