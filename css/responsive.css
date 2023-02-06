@@ -72,6 +72,10 @@
         font-size: 16px;
     }
 
+    .profile-modal{
+        height: 400px;
+    }
+
     .profile-img {
         height: 100px;
         width: 100px;
@@ -169,34 +173,31 @@
     }
 
     /* header */
-
-    .profile-container {
-        flex: 1 1 500px;
-        justify-content: flex-start;
-        border-right: none;
+    .anchors-burger-menu{
+        display: none;
     }
 
-    .header-menu {
-        width: 100%;
+    .anchors-menu{
         display: flex;
-        justify-content: space-around;
+        font-size: 20px;
+        gap: 10px;
+        transition: 0.3s;
     }
 
-    .header-menu-item {
-        font-size: 16px;
+    .logo-header h2{
+        font-size: 30px;
+        font-weight: 200;
     }
 
-    .logo {
-        font-size: 28px;
+    .second-menu-text{
+        display: block;
     }
 
-    .header-container {
-        width: 90vw;
-        height: 80px;
-        border-radius: 20px;
+    .user-opener, .cart-anchor{
+        width: 100px;
     }
 
-    /* *profile modal */
+    /* profile modal */
     .profile-modal-container {
         font-size: 18px;
     }
@@ -269,22 +270,20 @@
     }
 
     /* header */
-    
-    .profile {
-        font-size: 24px;
-        gap: 15px;
+    header{
+        height: 80px;
     }
-    
-    .header-menu-item {
-        font-size: 24px;
+
+    .logo-header h2{
+        font-size: 40px;
     }
-    
-    .logo {
-        font-size: 30px;
+
+    .user-opener, .cart-anchor{
+        width: 130px;
+        height: 40px;
     }
-    
-    .cart-container {
-        font-size: 24px;
-        gap: 15px;
+
+    .anchor-menu-item{
+        font-size: 25px;
     }
 }
