@@ -58,8 +58,9 @@
         width: 15%;
     }
 
-    .cart-container {
+    .cart-card-container {
         font-size: 16px;
+        margin: 40px 0 0 0;
     }
 
     .cart-total-price {
@@ -294,5 +295,10 @@
 
     .anchors-menu{
         gap: 20px
+    }
+
+    /* cart */
+    .cart-card-container{
+        margin: 50px 0 0 0;
     }
 }
