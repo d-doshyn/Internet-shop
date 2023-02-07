@@ -2,6 +2,77 @@ body {
   min-height: 100vh;
 }
 
+/* header */
+header{
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-header h2{
+    font-weight: 400;
+}
+.cart-user-menu{
+    display: flex;
+    gap: 10px;
+}
+.second-menu-text{
+    display: none;
+}
+.user-opener, .cart-anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #000 1px solid;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.user-opener:hover, .cart-anchor:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.anchors-menu{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    z-index: 3;
+}
+
+.anchors-burger-menu{
+    height: 25px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.anchors-menu a {
+    transition: 0.3s;
+}
+.anchors-menu a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+.menu-line{
+    height: 2px;
+    background-color: #000;
+    width: 100%;
+}
+
 /* registration modal */
 .reg-modal-container {
   position: absolute;
@@ -571,6 +642,7 @@ div .-active-menu-icon {
 	justify-items: center;
 	align-items: center;
 	width: fit-content;
+    height: fit-content;
 	padding: 20px;
 	background-color: #ffffff;
 	color: rgb(0, 0, 0);
