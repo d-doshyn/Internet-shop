@@ -68,13 +68,14 @@
     }
 
     /* *profile modal */
+
+    .profile-modal {
+        padding: 35px 25px 35px 25px;
+    }
+
     .profile-modal-container {
         gap: 15px;
         font-size: 16px;
-    }
-
-    .profile-modal{
-        height: 400px;
     }
 
     .profile-img {
