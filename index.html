@@ -29,6 +29,7 @@
 
     <!-- js links -->
     <script src="js/headerMenu.js" defer></script>
+    <script src="js/anchor.js" defer></script>
 
     <title>Файний інтернет-магазин</title>
 </head>
@@ -55,9 +56,9 @@
             <div class="menu-line"></div>
         </div>
         <div class="anchors-menu">
-            <h5 class="menu-item"><a href="#" class="anchor-menu-item">Main</a></h5>
-            <h5 class="menu-item"><a href="#" class="anchor-menu-item">Catalog</a></h5>
-            <h5 class="menu-item"><a href="#" class="anchor-menu-item">Contacts</a></h5>
+            <h5 class="menu-item"><a href="#main" class="anchor-menu-item">Main</a></h5>
+            <h5 class="menu-item"><a href="#catalog" class="anchor-menu-item">Catalog</a></h5>
+            <h5 class="menu-item"><a href="#contacts" class="anchor-menu-item">Contacts</a></h5>
         </div>
     </header>
 
@@ -97,14 +98,14 @@
     </section>
 
     <!-- main page -->
-    <main id="particles-js">
+    <main id="particles-js main">
         <h1 class="main-page-title">So nice internet-shop</h1>
         <h5 class="main-page-subtitle">No doubt</h5>
         <a class="from-main-to-catalog">TO CATALOG</a>
     </main>
 
     <!-- catalog -->
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="catalog-container">
             <div class="card card1">
                 <div class="img-container">
@@ -243,7 +244,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="footer__container">
             <div class="footer__header-container">
                 <h2 class="footer__header">So nice internet-shop by CoolBoys</h2>
