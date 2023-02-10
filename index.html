@@ -29,6 +29,7 @@
 
     <!-- js links -->
     <script src="js/headerMenu.js" defer></script>
+    <script src="js/anchor.js" defer></script>
 
     <title>Файний інтернет-магазин</title>
 </head>
@@ -53,9 +54,9 @@
             <i class="fa-solid fa-bars"></i>
         </div>
         <div class="anchors-menu" style="display: none">
-            <h5 class="menu-item"><a href="#" class="anchor-menu-item">Main</a></h5>
-            <h5 class="menu-item"><a href="#" class="anchor-menu-item">Catalog</a></h5>
-            <h5 class="menu-item"><a href="#" class="anchor-menu-item">Contacts</a></h5>
+            <h5 class="menu-item"><a href="#main" class="anchor-menu-item">Main</a></h5>
+            <h5 class="menu-item"><a href="#catalog" class="anchor-menu-item">Catalog</a></h5>
+            <h5 class="menu-item"><a href="#contacts" class="anchor-menu-item">Contacts</a></h5>
         </div>
     </header>
 
@@ -66,28 +67,24 @@
                 <div class="profile-modal-close-btn-container">
                     <i class="fa-sharp fa-solid fa-xmark"></i>
                 </div>
-                <div class="profile-img-container">
-                    <img class="profile-img" src="https://dummyimage.com/80x80/000000/ffffff.png?text=chiter777"
-                        alt="#">
-                </div>
                 <div class="profile-name-container">
                     <div class="profile-name-placeholder">Your name:</div>
-                    <div class="profile-username">Chiter777</div>
+                    <div class="profile-username">No data</div>
                 </div>
                 <div class="profile-email-container">
                     <div class="profile-email-placeholder">Your e-mail:</div>
-                    <div class="profile-user-emial">Email</div>
+                    <div class="profile-user-emial">No data</div>
                 </div>
                 <div class="profile-password-container">
-                    <div class="profile-password-placeholder">Your password:</div>
-                    <div class="profile-password">Password</div>
+                    <div class="profile-password-placeholder">Your phone number:</div>
+                    <div class="profile-password">No data</div>
                 </div>
                 <div class="profile-signing-btns-container">
                     <div class="profile-delete-data-container">
                         <button class="profile-delete-data">Delete all data</button>
                     </div>
                     <div class="profile-sign-in-container">
-                        <button class="profile-sign-in">Sign in</button>
+                        <button class="profile-sign-in">Add data</button>
                     </div>
                 </div>
             </div>
@@ -95,14 +92,14 @@
     </section>
 
     <!-- main page -->
-    <main id="particles-js">
+    <main id="particles-js main">
         <h1 class="main-page-title">So nice internet-shop</h1>
         <h5 class="main-page-subtitle">No doubt</h5>
         <a class="from-main-to-catalog">TO CATALOG</a>
     </main>
 
     <!-- catalog -->
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="catalog-container">
             <div class="card card1">
                 <div class="img-container">
@@ -241,7 +238,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="footer__container">
             <div class="footer__header-container">
                 <h2 class="footer__header">So nice internet-shop by CoolBoys</h2>
