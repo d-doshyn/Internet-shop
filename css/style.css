@@ -641,8 +641,8 @@ div .-active-menu-icon {
 /* profile modal */
 .profile-modal-Container {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.302);
     display: none;
     z-index: 5;
