@@ -52,7 +52,7 @@
     .rights {
         font-size: 15px;
     }
-    
+
     /* cart */
     .cart {
         width: 15%;
@@ -76,6 +76,13 @@
     .profile-modal-container {
         gap: 15px;
         font-size: 16px;
+    }
+
+    .profile-modal-close-btn-container {
+        left: 30px;
+        top: 30px;
+        font-size: 30px;
+        padding: 0 10px 0 10px;
     }
 
     .profile-img {
@@ -154,7 +161,7 @@
     }
 
     /* cart */
-    .cart-card{
+    .cart-card {
         justify-content: center;
     }
 
@@ -175,11 +182,11 @@
     }
 
     /* header */
-    .anchors-burger-menu{
+    .anchors-burger-menu {
         display: none;
     }
 
-    .anchors-menu{
+    .anchors-menu {
         display: flex;
         flex-direction: row;
         position: static;
@@ -191,16 +198,17 @@
         transition: 0.3s;
     }
 
-    .logo-header h2{
+    .logo-header h2 {
         font-size: 30px;
         font-weight: 200;
     }
 
-    .second-menu-text{
+    .second-menu-text {
         display: block;
     }
 
-    .user-opener, .cart-anchor{
+    .user-opener,
+    .cart-anchor {
         width: 100px;
     }
 
@@ -277,29 +285,37 @@
     }
 
     /* header */
-    header{
+    header {
         height: 80px;
     }
 
-    .logo-header h2{
+    .logo-header h2 {
         font-size: 40px;
     }
 
-    .user-opener, .cart-anchor{
+    .user-opener,
+    .cart-anchor {
         width: 130px;
         height: 40px;
     }
 
-    .anchor-menu-item{
+    .anchor-menu-item {
         font-size: 25px;
     }
 
-    .anchors-menu{
+    .anchors-menu {
         gap: 20px
     }
 
     /* cart */
-    .cart-card-container{
+    .cart-card-container {
         margin: 50px 0 0 0;
+    }
+
+    /* *profile modal */
+    .profile-modal-close-btn-container {
+        left: 50px;
+        top: 50px;
+        font-size: 36px;
     }
 }
