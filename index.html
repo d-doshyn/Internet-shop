@@ -33,6 +33,7 @@
     <script src="js/anchor.js" defer></script>
     <script src="js/products.js" defer></script>
     <script src="js/cart.js" defer></script>
+    <script src="js/userModal.js" defer></script>
 
     <title>Файний інтернет-магазин</title>
 </head>
@@ -196,18 +197,17 @@
             <h2 class="form-title">USER INFO</h2>
             <div class="form-field">
                 <h6 class="form-input-subtitle">Name</h6>
-                <input type="text" class="reg-form-input" placeholder="Your name" required>
+                <input type="text" class="reg-form-input" data-val="name" placeholder="Your name" required>
             </div>
             <div class="form-field">
                 <h6 class="form-input-subtitle">E-mail</h6>
-                <input type="text" class="reg-form-input" placeholder="Your e-mail" required>
+                <input type="text" class="reg-form-input" data-val="email" placeholder="Your e-mail" required>
             </div>
             <div class="form-field">
                 <h6 class="form-input-subtitle">Phone number</h6>
-                <input type="number" class="reg-form-input" placeholder="Your phone number" required>
+                <input type="number" class="reg-form-input" data-val="number" placeholder="Your phone number" required>
             </div>
             <div class="authorize-buttons">
-                <button class="dont-authorize">Not now</button>
                 <button class="authorize">Done</button>
             </div>
         </form>
