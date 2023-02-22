@@ -93,6 +93,7 @@ function renderCartItems() {
                 <p class="card-price">${item.price}$</p>
                 <p class="card-count"><span class="cart-minus-btn" onclick="changeNumberOfUnits('minus', ${item.id})">-</span> ${item.numberOfUnits} <span class="cart-plus-btn" onclick="changeNumberOfUnits('plus', ${item.id})">+</span></p>
             </div>
+            <p class="cart-delete-btn"><i class="fa-sharp fa-solid fa-xmark"></i></p>
         </div>
         `
     })
