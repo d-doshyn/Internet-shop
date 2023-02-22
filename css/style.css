@@ -414,6 +414,10 @@ canvas {
 .cart-container:hover .cart-text a {
     color: black;
 }
+.cart-plus-btn,
+.cart-minus-btn {
+    cursor: pointer;
+}
 
 .burger-menu-icon {
     display: none;

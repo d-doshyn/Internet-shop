@@ -31,41 +31,43 @@
     <script src="js/headerMenu.js" defer></script>
     <script src="js/profileModalOpener.js" defer></script>
     <script src="js/anchor.js" defer></script>
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
 
     <title>Файний інтернет-магазин</title>
 </head>
 
 <body>
-        <!-- user modal -->
-        <section class="profile-modal-Container">
-            <div class="profile-modal-close-btn-container">
-                <i class="fa-sharp fa-solid fa-xmark"></i>
-            </div>
-            <div class="profile-modal">
-                <div class="profile-modal-container">
-                    <div class="profile-name-container">
-                        <div class="profile-name-placeholder">Your name:</div>
-                        <div class="profile-username">No data</div>
+    <!-- user modal -->
+    <section class="profile-modal-Container">
+        <div class="profile-modal-close-btn-container">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <div class="profile-modal">
+            <div class="profile-modal-container">
+                <div class="profile-name-container">
+                    <div class="profile-name-placeholder">Your name:</div>
+                    <div class="profile-username">No data</div>
+                </div>
+                <div class="profile-email-container">
+                    <div class="profile-email-placeholder">Your e-mail:</div>
+                    <div class="profile-user-emial">No data</div>
+                </div>
+                <div class="profile-password-container">
+                    <div class="profile-password-placeholder">Your phone number:</div>
+                    <div class="profile-password">No data</div>
+                </div>
+                <div class="profile-signing-btns-container">
+                    <div class="profile-delete-data-container">
+                        <button class="profile-delete-data">Delete all data</button>
                     </div>
-                    <div class="profile-email-container">
-                        <div class="profile-email-placeholder">Your e-mail:</div>
-                        <div class="profile-user-emial">No data</div>
-                    </div>
-                    <div class="profile-password-container">
-                        <div class="profile-password-placeholder">Your phone number:</div>
-                        <div class="profile-password">No data</div>
-                    </div>
-                    <div class="profile-signing-btns-container">
-                        <div class="profile-delete-data-container">
-                            <button class="profile-delete-data">Delete all data</button>
-                        </div>
-                        <div class="profile-sign-in-container">
-                            <button class="profile-sign-in">Add data</button>
-                        </div>
+                    <div class="profile-sign-in-container">
+                        <button class="profile-sign-in">Add data</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- header -->
     <header>
         <div class="logo-header">
@@ -101,7 +103,7 @@
     <!-- catalog -->
     <section class="catalog" id="catalog">
         <div class="catalog-container">
-            <div class="card card1">
+            <!-- <div class="card card1">
                 <div class="img-container">
                     <img src="https://dummyimage.com/100x100/003330/ffffff.png?text=Product1" alt="#" class="card-img">
                 </div>
@@ -123,7 +125,7 @@
                     <h6 class="product-name">Product2</h6>
                 </div>
                 <div class="price-container">
-                    <h6 class="price">30$</h6>
+                    <h6 class="price">20$</h6>
                 </div>
                 <div class="add-to-cart-container">
                     <h6 class="add-to-cart">ADD TO CART</h6>
@@ -137,7 +139,7 @@
                     <h6 class="product-name">Product3</h6>
                 </div>
                 <div class="price-container">
-                    <h6 class="price">30$</h6>
+                    <h6 class="price">46$</h6>
                 </div>
                 <div class="add-to-cart-container">
                     <h6 class="add-to-cart">ADD TO CART</h6>
@@ -151,7 +153,7 @@
                     <h6 class="product-name">Product4</h6>
                 </div>
                 <div class="price-container">
-                    <h6 class="price">30$</h6>
+                    <h6 class="price">98$</h6>
                 </div>
                 <div class="add-to-cart-container">
                     <h6 class="add-to-cart">ADD TO CART</h6>
@@ -165,7 +167,7 @@
                     <h6 class="product-name">Product5</h6>
                 </div>
                 <div class="price-container">
-                    <h6 class="price">30$</h6>
+                    <h6 class="price">3827$</h6>
                 </div>
                 <div class="add-to-cart-container">
                     <h6 class="add-to-cart">ADD TO CART</h6>
@@ -179,12 +181,13 @@
                     <h6 class="product-name">Product6</h6>
                 </div>
                 <div class="price-container">
-                    <h6 class="price">30$</h6>
+                    <h6 class="price">1$</h6>
                 </div>
                 <div class="add-to-cart-container">
                     <h6 class="add-to-cart">ADD TO CART</h6>
                 </div>
-            </div>
+            </div> -->
+        </div>
     </section>
 
     <!-- registration modal -->
@@ -215,25 +218,27 @@
         <h2 class="cart-total-price">
             You added 0 items to your cart. <br>Total price: $0
         </h2>
-        <div class="cart-card">
-            <div class="cart-card-left">
-                <img src='https://dummyimage.com/150.png?text=Product'>
-            </div>
-            <div class="cart-card-right">
-                <h3 class="cart-card-title">Some cool title</h3>
-                <p class="card-price">0$</p>
-                <p class="card-count">- 1 +</p>
-            </div>
-        </div>
-        <div class="cart-card">
-            <div class="cart-card-left">
-                <img src='https://dummyimage.com/150.png?text=Product'>
-            </div>
-            <div class="cart-card-right">
-                <h3 class="cart-card-title">Some cool title</h3>
-                <p class="card-price">0$</p>
-                <p class="card-count">- 1 +</p>
-            </div>
+        <div class="cart-products-container">
+            <!-- <div class="cart-card">
+                <div class="cart-card-left">
+                    <img src='https://dummyimage.com/150.png?text=Product'>
+                </div>
+                <div class="cart-card-right">
+                    <h3 class="cart-card-title">Some cool title</h3>
+                    <p class="card-price">0$</p>
+                    <p class="card-count">- 1 +</p>
+                </div>
+            </div> -->
+            <!-- <div class="cart-card">
+                <div class="cart-card-left">
+                    <img src='https://dummyimage.com/150.png?text=Product'>
+                </div>
+                <div class="cart-card-right">
+                    <h3 class="cart-card-title">Some cool title</h3>
+                    <p class="card-price">0$</p>
+                    <p class="card-count">- 1 +</p>
+                </div>
+            </div> -->
         </div>
     </section>
 
