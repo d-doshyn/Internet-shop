@@ -408,12 +408,14 @@ canvas {
 .cart-container:hover .cart-text a {
     color: black;
 }
+
 .cart-plus-btn,
 .cart-minus-btn {
     cursor: pointer;
 }
 
 .cart-delete-btn {
+    height: fit-content;
     cursor: pointer;
 }
 
@@ -749,5 +751,5 @@ div .-active-menu-icon {
 }
 
 .flex {
-display: flex;
+    display: flex;
 }

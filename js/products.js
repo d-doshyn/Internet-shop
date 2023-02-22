@@ -34,5 +34,5 @@ const products = [
         name: "Product6",
         price: 1.11,
         imgSrc: "https://dummyimage.com/100x100/0033ff/000000.png?text=Product6",
-    }
+    },
 ]
