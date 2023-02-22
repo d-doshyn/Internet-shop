@@ -325,20 +325,14 @@ canvas {
 
 .cart-card {
     display: flex;
-    padding: 20px;
-}
-
-.cart-card {
-    display: flex;
-    padding: 20px;
+    justify-content: center;
 }
 
 .cart-card-right {
-    margin: 0 0 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 10px;
+    margin: 0 20px 0 20px;
 }
 
 .card-title {
@@ -416,6 +410,10 @@ canvas {
 }
 .cart-plus-btn,
 .cart-minus-btn {
+    cursor: pointer;
+}
+
+.cart-delete-btn {
     cursor: pointer;
 }
 
