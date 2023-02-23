@@ -314,10 +314,12 @@ canvas {
 
 /* cart */
 .cart-card-container {
+    border-top: 2px rgb(206, 206, 206) solid;
     margin: 20px 0 0 0;
 }
 
 .cart-total-price {
+    margin: 20px auto;
     font-size: 18px;
     color: black;
     text-align: center;
@@ -326,6 +328,7 @@ canvas {
 .cart-card {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .cart-card-right {
@@ -417,6 +420,43 @@ canvas {
 .cart-delete-btn {
     height: fit-content;
     cursor: pointer;
+}
+
+.admition-btn-container {
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.admition-btn {
+    width: fit-content;
+    background-color: #000;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.admition-btn:hover {
+    background-color: #fff;
+}
+
+.admition-btn:hover:visited {
+    color: black;
+}
+
+.admition-btn:hover:link {
+    color: black;
+}
+
+.admition-btn:visited {
+    color: white;
+}
+.admition-btn:link {
+    color: white;
 }
 
 .burger-menu-icon {

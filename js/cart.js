@@ -1,6 +1,7 @@
 const cards = document.querySelector(".catalog-container");
 const cartItems = document.querySelector(".cart-products-container");
 const cartItemsTotal = document.querySelector(".cart-total-price");
+const admitionBtn = document.querySelector(".admition-btn-container");
 
 //Rendering products
 
@@ -54,10 +55,19 @@ function addToCart(id) {
 function updateCart() {
     renderCartItems();
     renderTotal();
+    addAdmitionBtn();
 
     //save cart to local storage
 
     localStorage.setItem("CART", JSON.stringify(cart));
+}
+
+function addAdmitionBtn() {
+    if (cart.length > 0) {
+        admitionBtn.classList.add("flex");
+    } else {
+        admitionBtn.classList.remove("flex");
+    }
 }
 
 //calculate and render total

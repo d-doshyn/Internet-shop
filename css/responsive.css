@@ -187,6 +187,12 @@
         font-size: 24px;
     }
 
+    .admition-btn {
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
     /* header */
     .anchors-burger-menu {
         display: none;
@@ -316,6 +322,16 @@
     /* cart */
     .cart-card-container {
         margin: 50px 0 0 0;
+    }
+
+    .admition-btn {
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 24px;
+    }
+
+    .admition-btn-container {
+        margin: 50px auto;
     }
 
     /* *profile modal */
