@@ -83,7 +83,7 @@ function renderTotal() {
 
     cartItemsTotal.innerHTML = `
     <h2 class="cart-total-price">
-        You added <sapn class="total-items">${totalItems}</sapn> items to your cart. <br>Total price: <span class="total-price">$${(totalPrice.toFixed(2))}</span>
+        You added <span class="total-items">${totalItems}</span> items to your cart. <br>Total price: <span class="total-price">$${(totalPrice.toFixed(2))}</span>
     </h2>
     `
 }
