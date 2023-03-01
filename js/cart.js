@@ -1,10 +1,13 @@
+/* 
+    Сразу видно: этот код стырили с нета, но слегка подшаманили под себя
+*/
+
 const cards = document.querySelector(".catalog-container");
 const cartItems = document.querySelector(".cart-products-container");
 const cartItemsTotal = document.querySelector(".cart-total-price");
 const admitionBtn = document.querySelector(".admition-btn-container");
 
-//Rendering products
-
+// Rendering products
 function renderProducts() {
     products.forEach((product) => {
         cards.innerHTML += `

@@ -6,13 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- particles -->
-    <script src="js/particles.js" defer></script>
-    <script src="js/app.js" defer></script>
-    
-    <!-- emailjs -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -31,11 +25,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- particles -->
+    <script src="js/libs/particles.js" defer></script>
+    <script src="js/particles.js" defer></script>
+
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
     <!-- js links -->
     <script src="js/headerMenu.js" defer></script>
     <script src="js/profileModalOpener.js" defer></script>
-    <script src="js/anchor.js" defer></script>
-    <script src="js/products.js" defer></script>
+    <!-- <script src="js/anchor.js" defer></script> -->
+    <script src="js/data/products.js" defer></script>
     <script src="js/cart.js" defer></script>
     <script src="js/userModal.js" defer></script>
     <script src="js/getOrder.js" defer></script>
@@ -44,36 +46,29 @@
 </head>
 
 <body>
-    <!-- user modal -->
-    <section class="profile-modal-Container">
-        <div class="profile-modal-close-btn-container">
-            <i class="fa-sharp fa-solid fa-xmark"></i>
-        </div>
-        <div class="profile-modal">
-            <div class="profile-modal-container">
-                <div class="profile-name-container">
-                    <div class="profile-name-placeholder">Your name:</div>
-                    <div class="profile-username">No data</div>
-                </div>
-                <div class="profile-email-container">
-                    <div class="profile-email-placeholder">Your e-mail:</div>
-                    <div class="profile-user-emial">No data</div>
-                </div>
-                <div class="profile-password-container">
-                    <div class="profile-password-placeholder">Your phone number:</div>
-                    <div class="profile-password">No data</div>
-                </div>
-                <div class="profile-signing-btns-container">
-                    <div class="profile-delete-data-container">
-                        <button class="profile-delete-data">Delete all data</button>
-                    </div>
-                    <div class="profile-sign-in-container">
-                        <button class="profile-sign-in">Add data</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <!-- Updates:
+        
+        1. Move user modal to the bottom of html doc
+            (modal are usually placed there)
+        2. Move particles lib to separate folder, rename app.js -> particles.js
+        3. Fist - links, after - scripts (почему-то были в перемешку. А-я-я-й!..)
+        4. Move products.js -> data/ folder
+    -->
+
+    <!-- 
+        Личное мнение (personal suggestions) 
+         
+        1. Не используйте названия классов, которые нагромождаются друг на друга
+        (как это сделано в profile-modal-Container)
+            - длиннющие классы
+            - тяжело поддерживать такой код
+            - так и просится сократить до .modal, .modal-wrapper, .modal-button и т.д
+    
+    -->
+
+
+
     <!-- header -->
     <header>
         <div class="logo-header">
@@ -109,90 +104,11 @@
     <!-- catalog -->
     <section class="catalog" id="catalog">
         <div class="catalog-container">
-            <!-- <div class="card card1">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/003330/ffffff.png?text=Product1" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product1</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">30$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card2">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/440000/ffffff.png?text=Product2" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product2</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">20$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card3">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/186/ffffff.png?text=Product3" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product3</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">46$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card4">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/ffdd00/0.png?text=Product4" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product4</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">98$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card5">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/ff00f7/000000.png?text=Product5" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product5</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">3827$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card6">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/0033ff/000000.png?text=Product6" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product6</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">1$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div> -->
+            <!-- 
+                И зачем тут было оставлять столько комментариев?
+                Нагадил? Убери за собой😄 (с) 
+            -->
+
         </div>
     </section>
 
@@ -273,6 +189,38 @@
             </div>
         </div>
     </footer>
+
+    <!-- user modal -->
+    <section class="profile-modal-Container">
+        <div class="profile-modal-close-btn-container">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <div class="profile-modal">
+            <div class="profile-modal-container">
+                <div class="profile-name-container">
+                    <div class="profile-name-placeholder">Your name:</div>
+                    <div class="profile-username">No data</div>
+                </div>
+                <div class="profile-email-container">
+                    <div class="profile-email-placeholder">Your e-mail:</div>
+                    <div class="profile-user-emial">No data</div>
+                </div>
+                <div class="profile-password-container">
+                    <div class="profile-password-placeholder">Your phone number:</div>
+                    <div class="profile-password">No data</div>
+                </div>
+                <div class="profile-signing-btns-container">
+                    <div class="profile-delete-data-container">
+                        <button class="profile-delete-data">Delete all data</button>
+                    </div>
+                    <div class="profile-sign-in-container">
+                        <button class="profile-sign-in">Add data</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

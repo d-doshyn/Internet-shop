@@ -1,5 +1,17 @@
-body {
-    min-height: 100vh;
+/* 
+    updates:
+
+    1. Add scroll-behavior: smooth for <html>
+    2. Remove min-height for <body> (unneccessary)
+    3. Set implicit positions & position: fixed for modal window
+    4. 
+
+
+    
+*/
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* header */
@@ -684,7 +696,8 @@ div .-active-menu-icon {
 
 /* profile modal */
 .profile-modal-Container {
-    position: absolute;
+    position: fixed;
+    inset: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.302);

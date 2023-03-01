@@ -1,8 +1,4 @@
-/* img fits the borders */
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
+/* updated: change selector order */
 
 /*remove margins*/
 * {
@@ -14,4 +10,10 @@ img {
 /* standart font */
 html {
     font-family: 'Montserrat', sans-serif;
+}
+
+/* img fits the borders */
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
