@@ -1,12 +1,9 @@
 /* 
-    updates:
+    Updates:
 
     1. Add scroll-behavior: smooth for <html>
-    2. Remove min-height for <body> (unneccessary)
+    2. Remove min-height for <body> (it was unneccessary)
     3. Set implicit positions & position: fixed for modal window
-    4. 
-
-
     
 */
 

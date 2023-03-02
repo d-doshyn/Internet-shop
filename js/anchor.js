@@ -1,9 +1,11 @@
 /* 
-  Дорогой девелопер, обрати внимание: этот файл - один большой костыль
+  Девелопер, обрати внимание: без этого файла можно обойтись!
+
   Зачем все эти танцы с бубном, если можно просто дать <html> scroll-behavior: smooth
   (смотри style.css)
 
-  Двоюшник, если не знал о scroll-behavior: smooth
+  Не знал о scroll-behavior: smooth? Троюшник!
+  
 */
 
 // const anchors = document.querySelectorAll('a[href*="#"]')

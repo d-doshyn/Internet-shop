@@ -32,6 +32,9 @@
     <!-- emailjs -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+    <!-- 
+        move js to on place: it's handy  
+    -->
 
     <!-- js links -->
     <script src="js/headerMenu.js" defer></script>
@@ -50,20 +53,20 @@
     <!-- Updates:
         
         1. Move user modal to the bottom of html doc
-            (modal are usually placed there)
+            (modals are usually placed there)
         2. Move particles lib to separate folder, rename app.js -> particles.js
         3. Fist - links, after - scripts (почему-то были в перемешку. А-я-я-й!..)
-        4. Move products.js -> data/ folder
+        4. Move products.js -> to "data" folder
     -->
 
     <!-- 
         Личное мнение (personal suggestions) 
          
-        1. Не используйте названия классов, которые нагромождаются друг на друга
+        Не используйте названия классов, которые нагромождаются друг на друга
         (как это сделано в profile-modal-Container)
             - длиннющие классы
             - тяжело поддерживать такой код
-            - так и просится сократить до .modal, .modal-wrapper, .modal-button и т.д
+            - классы так и просятся сократиться до .modal, .modal-wrapper, .modal-button и т.д
     
     -->
 
@@ -106,7 +109,7 @@
         <div class="catalog-container">
             <!-- 
                 И зачем тут было оставлять столько комментариев?
-                Нагадил? Убери за собой😄 (с) 
+                Кажется, кто-то не убрал за собой😄 
             -->
 
         </div>
@@ -140,26 +143,7 @@
             You added 0 items to your cart. <br>Total price: $0
         </h2>
         <div class="cart-products-container">
-            <!-- <div class="cart-card">
-                <div class="cart-card-left">
-                    <img src='https://dummyimage.com/150.png?text=Product'>
-                </div>
-                <div class="cart-card-right">
-                    <h3 class="cart-card-title">Some cool title</h3>
-                    <p class="card-price">0$</p>
-                    <p class="card-count">- 1 +</p>
-                </div>
-            </div> -->
-            <!-- <div class="cart-card">
-                <div class="cart-card-left">
-                    <img src='https://dummyimage.com/150.png?text=Product'>
-                </div>
-                <div class="cart-card-right">
-                    <h3 class="cart-card-title">Some cool title</h3>
-                    <p class="card-price">0$</p>
-                    <p class="card-count">- 1 +</p>
-                </div>
-            </div> -->
+            <!-- js inserts code here -->
         </div>
         <div class="admition-btn-container">
             <a href="#" class="admition-btn">Buy</a>

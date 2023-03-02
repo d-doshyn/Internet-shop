@@ -1,5 +1,15 @@
 let buyBtn = document.querySelector(".admition-btn");
 
+/* 
+    Осторожно: впереди Огромная Функция
+    
+    1. Разбей её на части.
+    2. Объекты засуть в переменные
+    3. Переменные сделай глобальные (а не локальные let в if, else)
+    4. Данные для emailJS храни в переменных (template_id и прочее)
+     
+*/
+
 function getOrder() {
     if (!window.localStorage["USERDATA"] || window.localStorage["USERDATA"] == {
         "name": "No data",
