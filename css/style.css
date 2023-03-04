@@ -201,28 +201,13 @@ canvas {
 }
 
 .from-main-to-catalog {
-    display: block;
-    width: 140px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
-    border: 2px solid #000;
-    border-radius: 5px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    transition: 0.5s;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.from-main-to-catalog {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 140px;
     height: 40px;
     background-color: #000;
-    color: #fff;
+    color: #fff !important;
     border: 2px solid #000;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -234,7 +219,7 @@ canvas {
 
 .from-main-to-catalog:hover {
     background-color: #fff;
-    color: #000;
+    color: #000 !important;
 }
 
 .main-page-title {

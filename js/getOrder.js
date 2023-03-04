@@ -1,5 +1,20 @@
 let buyBtn = document.querySelector(".admition-btn");
 
+let parsedUserdata = JSON.parse(window.localStorage["USERDATA"]);
+let parsedProductsdata = JSON.parse(window.localStorage["CART"]);
+
+let totalPrice = document.querySelector("span.total-price").innerHTML;
+
+let namesArr = [];
+
+let allTheInfo = {
+    "name": parsedUserdata.name,
+    "email": parsedUserdata.email,
+    "number": parsedUserdata.number,
+    "productName": namesArr,
+    "toPay": totalPrice,
+}
+
 function getOrder() {
     if (!window.localStorage["USERDATA"] || window.localStorage["USERDATA"] == {
         "name": "No data",
@@ -11,23 +26,9 @@ function getOrder() {
         regModal.style.display = "flex";
         alert('At first, give us your contact info!');
     } else {
-        let parsedUserdata = JSON.parse(window.localStorage["USERDATA"]);
-        let parsedProductsdata = JSON.parse(window.localStorage["CART"]);
-
-        let totalPrice = document.querySelector("span.total-price").innerHTML;
-
-        let namesArr = [];
 
         for (let dataPiece of parsedProductsdata) {
             namesArr.push(dataPiece.name + ' ' + dataPiece.numberOfUnits + 'pcs')
-        }
-
-        let allTheInfo = {
-            "name": parsedUserdata.name,
-            "email": parsedUserdata.email,
-            "number": parsedUserdata.number,
-            "productName": namesArr,
-            "toPay": totalPrice,
         }
 
         emailjs.init("kBOW8N-Edy7yi5g_l");
