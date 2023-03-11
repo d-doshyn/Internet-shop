@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- particles -->
-    <script src="js/particles.js" defer></script>
-    <script src="js/app.js" defer></script>
+    <script src="js/libs/particles.js" defer></script>
+    <script src="js/libs/app.js" defer></script>
     
     <!-- emailjs -->
     <script type="text/javascript"
@@ -34,7 +34,6 @@
     <!-- js links -->
     <script src="js/headerMenu.js" defer></script>
     <script src="js/profileModalOpener.js" defer></script>
-    <script src="js/anchor.js" defer></script>
     <script src="js/products.js" defer></script>
     <script src="js/cart.js" defer></script>
     <script src="js/userModal.js" defer></script>
@@ -109,90 +108,6 @@
     <!-- catalog -->
     <section class="catalog" id="catalog">
         <div class="catalog-container">
-            <!-- <div class="card card1">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/003330/ffffff.png?text=Product1" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product1</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">30$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card2">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/440000/ffffff.png?text=Product2" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product2</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">20$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card3">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/186/ffffff.png?text=Product3" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product3</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">46$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card4">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/ffdd00/0.png?text=Product4" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product4</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">98$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card5">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/ff00f7/000000.png?text=Product5" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product5</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">3827$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div>
-            <div class="card card6">
-                <div class="img-container">
-                    <img src="https://dummyimage.com/100x100/0033ff/000000.png?text=Product6" alt="#" class="card-img">
-                </div>
-                <div class="product-name-container">
-                    <h6 class="product-name">Product6</h6>
-                </div>
-                <div class="price-container">
-                    <h6 class="price">1$</h6>
-                </div>
-                <div class="add-to-cart-container">
-                    <h6 class="add-to-cart">ADD TO CART</h6>
-                </div>
-            </div> -->
         </div>
     </section>
 
@@ -202,15 +117,15 @@
             <h2 class="form-title">USER INFO</h2>
             <div class="form-field">
                 <h6 class="form-input-subtitle">Name</h6>
-                <input type="text" class="reg-form-input" data-val="name" placeholder="Your name" required>
+                <input type="text" class="reg-form-input input-name" data-val="name" placeholder="Your name" required>
             </div>
             <div class="form-field">
                 <h6 class="form-input-subtitle">E-mail</h6>
-                <input type="text" class="reg-form-input" data-val="email" placeholder="Your e-mail" required>
+                <input type="text" class="reg-form-input input-email" data-val="email" placeholder="Your e-mail" required>
             </div>
             <div class="form-field">
                 <h6 class="form-input-subtitle">Phone number</h6>
-                <input type="number" class="reg-form-input" data-val="number" placeholder="Your phone number" required>
+                <input type="number" class="reg-form-input input-number" data-val="number" placeholder="Your phone number" required>
             </div>
             <div class="authorize-buttons">
                 <button class="authorize">Done</button>
@@ -224,26 +139,6 @@
             You added 0 items to your cart. <br>Total price: $0
         </h2>
         <div class="cart-products-container">
-            <!-- <div class="cart-card">
-                <div class="cart-card-left">
-                    <img src='https://dummyimage.com/150.png?text=Product'>
-                </div>
-                <div class="cart-card-right">
-                    <h3 class="cart-card-title">Some cool title</h3>
-                    <p class="card-price">0$</p>
-                    <p class="card-count">- 1 +</p>
-                </div>
-            </div> -->
-            <!-- <div class="cart-card">
-                <div class="cart-card-left">
-                    <img src='https://dummyimage.com/150.png?text=Product'>
-                </div>
-                <div class="cart-card-right">
-                    <h3 class="cart-card-title">Some cool title</h3>
-                    <p class="card-price">0$</p>
-                    <p class="card-count">- 1 +</p>
-                </div>
-            </div> -->
         </div>
         <div class="admition-btn-container">
             <a href="#" class="admition-btn">Buy</a>

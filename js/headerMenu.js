@@ -1,19 +1,18 @@
 let menuTrigger = document.querySelector('.anchors-burger-menu');
 let burgerMenu = document.querySelector('.anchors-menu');
-
 let menuIcon = document.querySelector('.fa-solid.fa-bars');
 
-function changeIcon(toAdd, toRemove) {
-    menuIcon.classList.add(toAdd);
+function changeIcon(toRemove, toAdd) {
     menuIcon.classList.remove(toRemove);
+    menuIcon.classList.add(toAdd);
 };
 
-menuTrigger.addEventListener("click", () => {
-    if (burgerMenu.style.display == "none") {
-        burgerMenu.style.display = "flex";
-        changeIcon("fa-xmark", 'fa-bars');
-    } else {
-        burgerMenu.style.display = "none";
-        changeIcon('fa-bars', 'fa-xmark');
-    }
-});
+function swapIcon(icon1, icon2) {
+    let classes = Array.from(menuIcon.classList);
+    classes.includes(icon1) ? changeIcon(icon1, icon2) : changeIcon(icon2, icon1);
+};
+
+menuTrigger.onclick = () => {
+    burgerMenu.classList.toggle('flex');
+    swapIcon('fa-bars', 'fa-xmark')
+}

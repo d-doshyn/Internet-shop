@@ -16,11 +16,7 @@ let allTheInfo = {
 }
 
 function getOrder() {
-    if (!window.localStorage["USERDATA"] || window.localStorage["USERDATA"] == {
-        "name": "No data",
-        "email": "No data",
-        "number": "No data",
-    }) {
+    if (!window.localStorage["USERDATA"] || window.localStorage["USERDATA"] == JSON.stringify({})) {
         let regModal = document.querySelector(".reg-modal-container");
 
         regModal.style.display = "flex";
